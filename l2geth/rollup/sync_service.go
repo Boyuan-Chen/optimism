@@ -59,6 +59,8 @@ type SyncService struct {
 	chainHeadCh               chan core.ChainHeadEvent
 	backend                   Backend
 	enforceFees               bool
+	feeThresholdUp            *big.Float
+	feeThresholdDown          *big.Float
 }
 
 // NewSyncService returns an initialized sync service
@@ -74,6 +76,9 @@ func NewSyncService(ctx context.Context, cfg Config, txpool *core.TxPool, bc *co
 		log.Info("Running in verifier mode", "sync-backend", cfg.Backend.String())
 	} else {
 		log.Info("Running in sequencer mode", "sync-backend", cfg.Backend.String())
+		log.Info("Fees", "gas-price", fees.BigTxGasPrice, "threshold-up", cfg.FeeThresholdUp,
+			"threshold-down", cfg.FeeThresholdDown)
+		log.Info("Enforce Fees", "set", cfg.EnforceFees)
 	}
 
 	pollInterval := cfg.PollInterval
@@ -95,7 +100,6 @@ func NewSyncService(ctx context.Context, cfg Config, txpool *core.TxPool, bc *co
 	// Initialize the rollup client
 	client := NewClient(cfg.RollupClientHttp, chainID)
 	log.Info("Configured rollup client", "url", cfg.RollupClientHttp, "chain-id", chainID.Uint64(), "ctc-deploy-height", cfg.CanonicalTransactionChainDeployHeight)
-	log.Info("Enforce Fees", "set", cfg.EnforceFees)
 	service := SyncService{
 		ctx:                       ctx,
 		cancel:                    cancel,
@@ -112,6 +116,8 @@ func NewSyncService(ctx context.Context, cfg Config, txpool *core.TxPool, bc *co
 		timestampRefreshThreshold: timestampRefreshThreshold,
 		backend:                   cfg.Backend,
 		enforceFees:               cfg.EnforceFees,
+		feeThresholdDown:          cfg.FeeThresholdDown,
+		feeThresholdUp:            cfg.FeeThresholdUp,
 	}
 
 	// The chainHeadSub is used to synchronize the SyncService with the chain.
@@ -756,22 +762,21 @@ func (s *SyncService) verifyFee(tx *types.Transaction) error {
 	if err != nil {
 		return err
 	}
+
 	// This should only happen if the transaction fee is greater than 18.44 ETH
 	if !fee.IsUint64() {
 		return fmt.Errorf("fee overflow: %s", fee.String())
 	}
-	// Compute the user's fee
-	paying := new(big.Int).Mul(new(big.Int).SetUint64(tx.Gas()), tx.GasPrice())
-	// Compute the minimum expected fee
-	expecting := new(big.Int).Mul(fee, fees.BigTxGasPrice)
-	if paying.Cmp(expecting) == -1 {
-		return fmt.Errorf("fee too low: %d, use at least tx.gasLimit = %d and tx.gasPrice = %d", paying, fee.Uint64(), fees.BigTxGasPrice)
+
+	opts := fees.PaysEnoughOpts{
+		GasLimit:      tx.Gas(),
+		GasPrice:      tx.GasPrice(),
+		Fee:           fee,
+		ThresholdUp:   s.feeThresholdUp,
+		ThresholdDown: s.feeThresholdDown,
 	}
-	// Protect users from overpaying by too much
-	overpaying := new(big.Int).Sub(paying, expecting)
-	threshold := new(big.Int).Mul(expecting, common.Big3)
-	if overpaying.Cmp(threshold) == 1 {
-		return fmt.Errorf("fee too large: %d", paying)
+	if err := fees.PaysEnough(&opts); err != nil {
+		return err
 	}
 	return nil
 }

@@ -1,6 +1,7 @@
 package fees
 
 import (
+	"errors"
 	"math/big"
 	"testing"
 
@@ -98,6 +99,83 @@ func TestCalculateRollupFee(t *testing.T) {
 			roundedL2GasLimit := Ceilmod(l2GasLimit, BigTenThousand)
 			if roundedL2GasLimit.Cmp(decodedGasLimit) != 0 {
 				t.Errorf("rollup fee check failed: expected %d, got %d", l2GasLimit.Uint64(), decodedGasLimit)
+			}
+		})
+	}
+}
+
+func TestPaysEnough(t *testing.T) {
+	tests := map[string]struct {
+		opts *PaysEnoughOpts
+		err  error
+	}{
+		"missing-gas-price": {
+			opts: &PaysEnoughOpts{
+				GasLimit:      0,
+				GasPrice:      nil,
+				Fee:           new(big.Int),
+				ThresholdUp:   nil,
+				ThresholdDown: nil,
+			},
+			err: errMissingInput,
+		},
+		"missing-fee": {
+			opts: &PaysEnoughOpts{
+				GasLimit:      0,
+				GasPrice:      new(big.Int),
+				Fee:           nil,
+				ThresholdUp:   nil,
+				ThresholdDown: nil,
+			},
+			err: errMissingInput,
+		},
+		"equal-fee": {
+			opts: &PaysEnoughOpts{
+				GasLimit:      1,
+				GasPrice:      BigTxGasPrice,
+				Fee:           new(big.Int).SetUint64(1),
+				ThresholdUp:   nil,
+				ThresholdDown: nil,
+			},
+			err: nil,
+		},
+		"fee-too-low": {
+			opts: &PaysEnoughOpts{
+				GasLimit:      1,
+				GasPrice:      BigTxGasPrice,
+				Fee:           new(big.Int).SetUint64(2),
+				ThresholdUp:   nil,
+				ThresholdDown: nil,
+			},
+			err: errFeeTooLow,
+		},
+		"fee-threshold-down": {
+			opts: &PaysEnoughOpts{
+				GasLimit:      1,
+				GasPrice:      BigTxGasPrice,
+				Fee:           new(big.Int).SetUint64(2),
+				ThresholdUp:   nil,
+				ThresholdDown: new(big.Float).SetFloat64(0.5),
+			},
+			err: nil,
+		},
+		"fee-threshold-up": {
+			opts: &PaysEnoughOpts{
+				GasLimit:      4,
+				GasPrice:      BigTxGasPrice,
+				Fee:           new(big.Int).SetUint64(2),
+				ThresholdUp:   new(big.Float).SetFloat64(1.5),
+				ThresholdDown: nil,
+			},
+			err: errFeeTooHigh,
+		},
+	}
+
+	for name, tt := range tests {
+		t.Run(name, func(t *testing.T) {
+			err := PaysEnough(tt.opts)
+			if !errors.Is(err, tt.err) {
+				t.Fatalf("%s: got %s, expected %s", name, err, tt.err)
 			}
 		})
 	}
