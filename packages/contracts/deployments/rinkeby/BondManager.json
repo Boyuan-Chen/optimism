@@ -1,0 +1,243 @@
+{
+  "address": "0x7Ded1e666F016bf72B6dD7845e287f34dB869d1d",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_libAddressManager",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_who",
+          "type": "address"
+        }
+      ],
+      "name": "claim",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "deposit",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_preStateRoot",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "_publisher",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_timestamp",
+          "type": "uint256"
+        }
+      ],
+      "name": "finalize",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "finalizeWithdrawal",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_preStateRoot",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "_who",
+          "type": "address"
+        }
+      ],
+      "name": "getGasSpent",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_who",
+          "type": "address"
+        }
+      ],
+      "name": "isCollateralized",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "libAddressManager",
+      "outputs": [
+        {
+          "internalType": "contract Lib_AddressManager",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_preStateRoot",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "_txHash",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "_who",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_gasSpent",
+          "type": "uint256"
+        }
+      ],
+      "name": "recordGasSpent",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_name",
+          "type": "string"
+        }
+      ],
+      "name": "resolve",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "startWithdrawal",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x89cadb5e973f959587340432c7dd71c028a3cd8d75d8998f30f4daa292fd763b",
+  "receipt": {
+    "to": null,
+    "from": "0x2A2D5e9D1A0f3485f3D5c3fd983028E0f226FeD6",
+    "contractAddress": "0x7Ded1e666F016bf72B6dD7845e287f34dB869d1d",
+    "transactionIndex": 22,
+    "gasUsed": "565126",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x83593071747a2571e1cb736de15cf059989fbfdcc5c59ead4be72dbe27e0ae6f",
+    "transactionHash": "0x89cadb5e973f959587340432c7dd71c028a3cd8d75d8998f30f4daa292fd763b",
+    "logs": [],
+    "blockNumber": 9368201,
+    "cumulativeGasUsed": "8562168",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [
+    "0xE8cbD28a5cc96ca86513ad8847D344EE634D0A9D"
+  ],
+  "solcInputHash": "57c40cf5c155d19ac0bd1dac14b9b230",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_libAddressManager\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_who\",\"type\":\"address\"}],\"name\":\"claim\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"deposit\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_preStateRoot\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"_publisher\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_timestamp\",\"type\":\"uint256\"}],\"name\":\"finalize\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"finalizeWithdrawal\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_preStateRoot\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"_who\",\"type\":\"address\"}],\"name\":\"getGasSpent\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_who\",\"type\":\"address\"}],\"name\":\"isCollateralized\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"libAddressManager\",\"outputs\":[{\"internalType\":\"contract Lib_AddressManager\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_preStateRoot\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"_txHash\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"_who\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_gasSpent\",\"type\":\"uint256\"}],\"name\":\"recordGasSpent\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_name\",\"type\":\"string\"}],\"name\":\"resolve\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"startWithdrawal\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"This contract is, for now, a stub of the \\\"real\\\" BondManager that does nothing but allow the \\\"OVM_Proposer\\\" to submit state root batches. Runtime target: EVM\",\"kind\":\"dev\",\"methods\":{\"resolve(string)\":{\"params\":{\"_name\":\"Name to resolve an address for.\"},\"returns\":{\"_0\":\"Address associated with the given name.\"}}},\"title\":\"BondManager\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"resolve(string)\":{\"notice\":\"Resolves the address associated with a given name.\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/L1/verification/BondManager.sol\":\"BondManager\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/access/Ownable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"../utils/Context.sol\\\";\\n\\n/**\\n * @dev Contract module which provides a basic access control mechanism, where\\n * there is an account (an owner) that can be granted exclusive access to\\n * specific functions.\\n *\\n * By default, the owner account will be the one that deploys the contract. This\\n * can later be changed with {transferOwnership}.\\n *\\n * This module is used through inheritance. It will make available the modifier\\n * `onlyOwner`, which can be applied to your functions to restrict their use to\\n * the owner.\\n */\\nabstract contract Ownable is Context {\\n    address private _owner;\\n\\n    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);\\n\\n    /**\\n     * @dev Initializes the contract setting the deployer as the initial owner.\\n     */\\n    constructor() {\\n        _setOwner(_msgSender());\\n    }\\n\\n    /**\\n     * @dev Returns the address of the current owner.\\n     */\\n    function owner() public view virtual returns (address) {\\n        return _owner;\\n    }\\n\\n    /**\\n     * @dev Throws if called by any account other than the owner.\\n     */\\n    modifier onlyOwner() {\\n        require(owner() == _msgSender(), \\\"Ownable: caller is not the owner\\\");\\n        _;\\n    }\\n\\n    /**\\n     * @dev Leaves the contract without owner. It will not be possible to call\\n     * `onlyOwner` functions anymore. Can only be called by the current owner.\\n     *\\n     * NOTE: Renouncing ownership will leave the contract without an owner,\\n     * thereby removing any functionality that is only available to the owner.\\n     */\\n    function renounceOwnership() public virtual onlyOwner {\\n        _setOwner(address(0));\\n    }\\n\\n    /**\\n     * @dev Transfers ownership of the contract to a new account (`newOwner`).\\n     * Can only be called by the current owner.\\n     */\\n    function transferOwnership(address newOwner) public virtual onlyOwner {\\n        require(newOwner != address(0), \\\"Ownable: new owner is the zero address\\\");\\n        _setOwner(newOwner);\\n    }\\n\\n    function _setOwner(address newOwner) private {\\n        address oldOwner = _owner;\\n        _owner = newOwner;\\n        emit OwnershipTransferred(oldOwner, newOwner);\\n    }\\n}\\n\",\"keccak256\":\"0x6bb804a310218875e89d12c053e94a13a4607cdf7cc2052f3e52bd32a0dc50a1\",\"license\":\"MIT\"},\"@openzeppelin/contracts/utils/Context.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev Provides information about the current execution context, including the\\n * sender of the transaction and its data. While these are generally available\\n * via msg.sender and msg.data, they should not be accessed in such a direct\\n * manner, since when dealing with meta-transactions the account sending and\\n * paying for execution may not be the actual sender (as far as an application\\n * is concerned).\\n *\\n * This contract is only required for intermediate, library-like contracts.\\n */\\nabstract contract Context {\\n    function _msgSender() internal view virtual returns (address) {\\n        return msg.sender;\\n    }\\n\\n    function _msgData() internal view virtual returns (bytes calldata) {\\n        return msg.data;\\n    }\\n}\\n\",\"keccak256\":\"0x90565a39ae45c80f0468dc96c7b20d0afc3055f344c8203a0c9258239f350b9f\",\"license\":\"MIT\"},\"contracts/L1/verification/BondManager.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.7;\\n\\n/* Interface Imports */\\nimport { IBondManager } from \\\"./IBondManager.sol\\\";\\n\\n/* Contract Imports */\\nimport { Lib_AddressResolver } from \\\"../../libraries/resolver/Lib_AddressResolver.sol\\\";\\n\\n/**\\n * @title BondManager\\n * @dev This contract is, for now, a stub of the \\\"real\\\" BondManager that does nothing but\\n * allow the \\\"OVM_Proposer\\\" to submit state root batches.\\n *\\n * Runtime target: EVM\\n */\\ncontract BondManager is IBondManager, Lib_AddressResolver {\\n\\n    constructor(\\n        address _libAddressManager\\n    )\\n        Lib_AddressResolver(_libAddressManager)\\n    {}\\n\\n    function recordGasSpent(\\n        bytes32 _preStateRoot,\\n        bytes32 _txHash,\\n        address _who,\\n        uint256 _gasSpent\\n    )\\n        override\\n        public\\n    {}\\n\\n    function finalize(\\n        bytes32 _preStateRoot,\\n        address _publisher,\\n        uint256 _timestamp\\n    )\\n        override\\n        public\\n    {}\\n\\n    function deposit()\\n        override\\n        public\\n    {}\\n\\n    function startWithdrawal()\\n        override\\n        public\\n    {}\\n\\n    function finalizeWithdrawal()\\n        override\\n        public\\n    {}\\n\\n    function claim(\\n        address _who\\n    )\\n        override\\n        public\\n    {}\\n\\n    function isCollateralized(\\n        address _who\\n    )\\n        override\\n        public\\n        view\\n        returns (\\n            bool\\n        )\\n    {\\n        // Only authenticate sequencer to submit state root batches.\\n        return _who == resolve(\\\"OVM_Proposer\\\");\\n    }\\n\\n    function getGasSpent(\\n        bytes32 _preStateRoot,\\n        address _who\\n    )\\n        override\\n        public\\n        pure\\n        returns (\\n            uint256\\n        )\\n    {\\n        return 0;\\n    }\\n}\\n\",\"keccak256\":\"0x1a528d444811e72df272f7ba8df7b3da537dc92891274237812f3edc8add7f12\",\"license\":\"MIT\"},\"contracts/L1/verification/IBondManager.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.7;\\n\\n/**\\n * @title IBondManager\\n */\\ninterface IBondManager {\\n\\n    /********************\\n     * Public Functions *\\n     ********************/\\n\\n    function recordGasSpent(\\n        bytes32 _preStateRoot,\\n        bytes32 _txHash,\\n        address _who,\\n        uint256 _gasSpent\\n    ) external;\\n\\n    function finalize(\\n        bytes32 _preStateRoot,\\n        address _publisher,\\n        uint256 _timestamp\\n    ) external;\\n\\n    function deposit() external;\\n\\n    function startWithdrawal() external;\\n\\n    function finalizeWithdrawal() external;\\n\\n    function claim(\\n        address _who\\n    ) external;\\n\\n    function isCollateralized(\\n        address _who\\n    ) external view returns (bool);\\n\\n    function getGasSpent(\\n        bytes32 _preStateRoot,\\n        address _who\\n    ) external view returns (uint256);\\n}\\n\",\"keccak256\":\"0x66f1ff177d19ced17c8933fba1e890a55c9c42ef8eaac6370727c85dcba41e57\",\"license\":\"MIT\"},\"contracts/libraries/resolver/Lib_AddressManager.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.7;\\n\\n/* External Imports */\\nimport { Ownable } from \\\"@openzeppelin/contracts/access/Ownable.sol\\\";\\n\\n/**\\n * @title Lib_AddressManager\\n */\\ncontract Lib_AddressManager is Ownable {\\n\\n    /**********\\n     * Events *\\n     **********/\\n\\n    event AddressSet(\\n        string indexed _name,\\n        address _newAddress,\\n        address _oldAddress\\n    );\\n\\n\\n    /*************\\n     * Variables *\\n     *************/\\n\\n    mapping (bytes32 => address) private addresses;\\n\\n\\n    /********************\\n     * Public Functions *\\n     ********************/\\n\\n    /**\\n     * Changes the address associated with a particular name.\\n     * @param _name String name to associate an address with.\\n     * @param _address Address to associate with the name.\\n     */\\n    function setAddress(\\n        string memory _name,\\n        address _address\\n    )\\n        external\\n        onlyOwner\\n    {\\n        bytes32 nameHash = _getNameHash(_name);\\n        address oldAddress = addresses[nameHash];\\n        addresses[nameHash] = _address;\\n\\n        emit AddressSet(\\n            _name,\\n            _address,\\n            oldAddress\\n        );\\n    }\\n\\n    /**\\n     * Retrieves the address associated with a given name.\\n     * @param _name Name to retrieve an address for.\\n     * @return Address associated with the given name.\\n     */\\n    function getAddress(\\n        string memory _name\\n    )\\n        external\\n        view\\n        returns (\\n            address\\n        )\\n    {\\n        return addresses[_getNameHash(_name)];\\n    }\\n\\n\\n    /**********************\\n     * Internal Functions *\\n     **********************/\\n\\n    /**\\n     * Computes the hash of a name.\\n     * @param _name Name to compute a hash for.\\n     * @return Hash of the given name.\\n     */\\n    function _getNameHash(\\n        string memory _name\\n    )\\n        internal\\n        pure\\n        returns (\\n            bytes32\\n        )\\n    {\\n        return keccak256(abi.encodePacked(_name));\\n    }\\n}\\n\",\"keccak256\":\"0x0faaea7d284026771ac72c6242886aab90f08caf4c96eade8214cacc6ba4dae3\",\"license\":\"MIT\"},\"contracts/libraries/resolver/Lib_AddressResolver.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.7;\\n\\n/* Library Imports */\\nimport { Lib_AddressManager } from \\\"./Lib_AddressManager.sol\\\";\\n\\n/**\\n * @title Lib_AddressResolver\\n */\\nabstract contract Lib_AddressResolver {\\n\\n    /*************\\n     * Variables *\\n     *************/\\n\\n    Lib_AddressManager public libAddressManager;\\n\\n\\n    /***************\\n     * Constructor *\\n     ***************/\\n\\n    /**\\n     * @param _libAddressManager Address of the Lib_AddressManager.\\n     */\\n    constructor(\\n        address _libAddressManager\\n    ) {\\n        libAddressManager = Lib_AddressManager(_libAddressManager);\\n    }\\n\\n\\n    /********************\\n     * Public Functions *\\n     ********************/\\n\\n    /**\\n     * Resolves the address associated with a given name.\\n     * @param _name Name to resolve an address for.\\n     * @return Address associated with the given name.\\n     */\\n    function resolve(\\n        string memory _name\\n    )\\n        public\\n        view\\n        returns (\\n            address\\n        )\\n    {\\n        return libAddressManager.getAddress(_name);\\n    }\\n}\\n\",\"keccak256\":\"0x83296f8bdb5c32afbff2eebc5b360eb81787e67365ece09df2ed902694626895\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506040516109e43803806109e48339818101604052810190610032919061008f565b80806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550505061010a565b600081519050610089816100f3565b92915050565b6000602082840312156100a5576100a46100ee565b5b60006100b38482850161007a565b91505092915050565b60006100c7826100ce565b9050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b600080fd5b6100fc816100bc565b811461010757600080fd5b50565b6108cb806101196000396000f3fe608060405234801561001057600080fd5b506004361061009e5760003560e01c8063abfbbe1311610066578063abfbbe1314610159578063bc2f8dd814610175578063c5b6aa2f1461017f578063d0e30db014610189578063dc6453dc146101935761009e565b806302ad4d2a146100a35780631e16e92f146100d35780631e83409a146100ef578063299ca4781461010b578063461a447814610129575b600080fd5b6100bd60048036038101906100b891906103ef565b6101c3565b6040516100ca919061061c565b60405180910390f35b6100ed60048036038101906100e891906104dc565b610238565b005b610109600480360381019061010491906103ef565b61023e565b005b610113610241565b6040516101209190610637565b60405180910390f35b610143600480360381019061013e9190610543565b610265565b6040516101509190610601565b60405180910390f35b610173600480360381019061016e9190610489565b610318565b005b61017d61031d565b005b61018761031f565b005b610191610321565b005b6101ad60048036038101906101a89190610449565b610323565b6040516101ba9190610674565b60405180910390f35b60006102036040518060400160405280600c81526020017f4f564d5f50726f706f7365720000000000000000000000000000000000000000815250610265565b73ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16149050919050565b50505050565b50565b60008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663bf40fac1836040518263ffffffff1660e01b81526004016102c19190610652565b60206040518083038186803b1580156102d957600080fd5b505afa1580156102ed573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610311919061041c565b9050919050565b505050565b565b565b565b600092915050565b600061033e610339846106b4565b61068f565b90508281526020810184848401111561035a57610359610830565b5b610365848285610789565b509392505050565b60008135905061037c81610850565b92915050565b60008151905061039181610850565b92915050565b6000813590506103a681610867565b92915050565b600082601f8301126103c1576103c061082b565b5b81356103d184826020860161032b565b91505092915050565b6000813590506103e98161087e565b92915050565b6000602082840312156104055761040461083a565b5b60006104138482850161036d565b91505092915050565b6000602082840312156104325761043161083a565b5b600061044084828501610382565b91505092915050565b600080604083850312156104605761045f61083a565b5b600061046e85828601610397565b925050602061047f8582860161036d565b9150509250929050565b6000806000606084860312156104a2576104a161083a565b5b60006104b086828701610397565b93505060206104c18682870161036d565b92505060406104d2868287016103da565b9150509250925092565b600080600080608085870312156104f6576104f561083a565b5b600061050487828801610397565b945050602061051587828801610397565b93505060406105268782880161036d565b9250506060610537878288016103da565b91505092959194509250565b6000602082840312156105595761055861083a565b5b600082013567ffffffffffffffff81111561057757610576610835565b5b610583848285016103ac565b91505092915050565b61059581610701565b82525050565b6105a481610713565b82525050565b6105b381610753565b82525050565b60006105c4826106e5565b6105ce81856106f0565b93506105de818560208601610798565b6105e78161083f565b840191505092915050565b6105fb81610749565b82525050565b6000602082019050610616600083018461058c565b92915050565b6000602082019050610631600083018461059b565b92915050565b600060208201905061064c60008301846105aa565b92915050565b6000602082019050818103600083015261066c81846105b9565b905092915050565b600060208201905061068960008301846105f2565b92915050565b60006106996106aa565b90506106a582826107cb565b919050565b6000604051905090565b600067ffffffffffffffff8211156106cf576106ce6107fc565b5b6106d88261083f565b9050602081019050919050565b600081519050919050565b600082825260208201905092915050565b600061070c82610729565b9050919050565b60008115159050919050565b6000819050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000819050919050565b600061075e82610765565b9050919050565b600061077082610777565b9050919050565b600061078282610729565b9050919050565b82818337600083830152505050565b60005b838110156107b657808201518184015260208101905061079b565b838111156107c5576000848401525b50505050565b6107d48261083f565b810181811067ffffffffffffffff821117156107f3576107f26107fc565b5b80604052505050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b600080fd5b600080fd5b600080fd5b600080fd5b6000601f19601f8301169050919050565b61085981610701565b811461086457600080fd5b50565b6108708161071f565b811461087b57600080fd5b50565b61088781610749565b811461089257600080fd5b5056fea26469706673582212208bf7c950c8ffbaa9129e059b4e37d116f3be06a17e43409fa746396a2908aceb64736f6c63430008070033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061009e5760003560e01c8063abfbbe1311610066578063abfbbe1314610159578063bc2f8dd814610175578063c5b6aa2f1461017f578063d0e30db014610189578063dc6453dc146101935761009e565b806302ad4d2a146100a35780631e16e92f146100d35780631e83409a146100ef578063299ca4781461010b578063461a447814610129575b600080fd5b6100bd60048036038101906100b891906103ef565b6101c3565b6040516100ca919061061c565b60405180910390f35b6100ed60048036038101906100e891906104dc565b610238565b005b610109600480360381019061010491906103ef565b61023e565b005b610113610241565b6040516101209190610637565b60405180910390f35b610143600480360381019061013e9190610543565b610265565b6040516101509190610601565b60405180910390f35b610173600480360381019061016e9190610489565b610318565b005b61017d61031d565b005b61018761031f565b005b610191610321565b005b6101ad60048036038101906101a89190610449565b610323565b6040516101ba9190610674565b60405180910390f35b60006102036040518060400160405280600c81526020017f4f564d5f50726f706f7365720000000000000000000000000000000000000000815250610265565b73ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16149050919050565b50505050565b50565b60008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663bf40fac1836040518263ffffffff1660e01b81526004016102c19190610652565b60206040518083038186803b1580156102d957600080fd5b505afa1580156102ed573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610311919061041c565b9050919050565b505050565b565b565b565b600092915050565b600061033e610339846106b4565b61068f565b90508281526020810184848401111561035a57610359610830565b5b610365848285610789565b509392505050565b60008135905061037c81610850565b92915050565b60008151905061039181610850565b92915050565b6000813590506103a681610867565b92915050565b600082601f8301126103c1576103c061082b565b5b81356103d184826020860161032b565b91505092915050565b6000813590506103e98161087e565b92915050565b6000602082840312156104055761040461083a565b5b60006104138482850161036d565b91505092915050565b6000602082840312156104325761043161083a565b5b600061044084828501610382565b91505092915050565b600080604083850312156104605761045f61083a565b5b600061046e85828601610397565b925050602061047f8582860161036d565b9150509250929050565b6000806000606084860312156104a2576104a161083a565b5b60006104b086828701610397565b93505060206104c18682870161036d565b92505060406104d2868287016103da565b9150509250925092565b600080600080608085870312156104f6576104f561083a565b5b600061050487828801610397565b945050602061051587828801610397565b93505060406105268782880161036d565b9250506060610537878288016103da565b91505092959194509250565b6000602082840312156105595761055861083a565b5b600082013567ffffffffffffffff81111561057757610576610835565b5b610583848285016103ac565b91505092915050565b61059581610701565b82525050565b6105a481610713565b82525050565b6105b381610753565b82525050565b60006105c4826106e5565b6105ce81856106f0565b93506105de818560208601610798565b6105e78161083f565b840191505092915050565b6105fb81610749565b82525050565b6000602082019050610616600083018461058c565b92915050565b6000602082019050610631600083018461059b565b92915050565b600060208201905061064c60008301846105aa565b92915050565b6000602082019050818103600083015261066c81846105b9565b905092915050565b600060208201905061068960008301846105f2565b92915050565b60006106996106aa565b90506106a582826107cb565b919050565b6000604051905090565b600067ffffffffffffffff8211156106cf576106ce6107fc565b5b6106d88261083f565b9050602081019050919050565b600081519050919050565b600082825260208201905092915050565b600061070c82610729565b9050919050565b60008115159050919050565b6000819050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000819050919050565b600061075e82610765565b9050919050565b600061077082610777565b9050919050565b600061078282610729565b9050919050565b82818337600083830152505050565b60005b838110156107b657808201518184015260208101905061079b565b838111156107c5576000848401525b50505050565b6107d48261083f565b810181811067ffffffffffffffff821117156107f3576107f26107fc565b5b80604052505050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b600080fd5b600080fd5b600080fd5b600080fd5b6000601f19601f8301169050919050565b61085981610701565b811461086457600080fd5b50565b6108708161071f565b811461087b57600080fd5b50565b61088781610749565b811461089257600080fd5b5056fea26469706673582212208bf7c950c8ffbaa9129e059b4e37d116f3be06a17e43409fa746396a2908aceb64736f6c63430008070033",
+  "devdoc": {
+    "details": "This contract is, for now, a stub of the \"real\" BondManager that does nothing but allow the \"OVM_Proposer\" to submit state root batches. Runtime target: EVM",
+    "kind": "dev",
+    "methods": {
+      "resolve(string)": {
+        "params": {
+          "_name": "Name to resolve an address for."
+        },
+        "returns": {
+          "_0": "Address associated with the given name."
+        }
+      }
+    },
+    "title": "BondManager",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "resolve(string)": {
+        "notice": "Resolves the address associated with a given name."
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 7832,
+        "contract": "contracts/L1/verification/BondManager.sol:BondManager",
+        "label": "libAddressManager",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_contract(Lib_AddressManager)7824"
+      }
+    ],
+    "types": {
+      "t_contract(Lib_AddressManager)7824": {
+        "encoding": "inplace",
+        "label": "contract Lib_AddressManager",
+        "numberOfBytes": "20"
+      }
+    }
+  }
+}

@@ -1,0 +1,390 @@
+{
+  "address": "0x0DdE29fEa7dB7b722293C2265bC87038F1e5ca0e",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_libAddressManager",
+          "type": "address"
+        },
+        {
+          "internalType": "string",
+          "name": "_owner",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_index",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes27",
+          "name": "_globalMetadata",
+          "type": "bytes27"
+        }
+      ],
+      "name": "deleteElementsAfterInclusive",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_index",
+          "type": "uint256"
+        }
+      ],
+      "name": "deleteElementsAfterInclusive",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_index",
+          "type": "uint256"
+        }
+      ],
+      "name": "get",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getGlobalMetadata",
+      "outputs": [
+        {
+          "internalType": "bytes27",
+          "name": "",
+          "type": "bytes27"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "length",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "libAddressManager",
+      "outputs": [
+        {
+          "internalType": "contract Lib_AddressManager",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_object",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes27",
+          "name": "_globalMetadata",
+          "type": "bytes27"
+        }
+      ],
+      "name": "push",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_object",
+          "type": "bytes32"
+        }
+      ],
+      "name": "push",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_name",
+          "type": "string"
+        }
+      ],
+      "name": "resolve",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes27",
+          "name": "_globalMetadata",
+          "type": "bytes27"
+        }
+      ],
+      "name": "setGlobalMetadata",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x0288f9a5aa04ef6c1b4937a4141c127378eea1898ba8377ee2e89cd931a0b406",
+  "receipt": {
+    "to": null,
+    "from": "0x2A2D5e9D1A0f3485f3D5c3fd983028E0f226FeD6",
+    "contractAddress": "0x0DdE29fEa7dB7b722293C2265bC87038F1e5ca0e",
+    "transactionIndex": 19,
+    "gasUsed": "1229759",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x6951bc10305a52c25ae84baeb6286e3035f5b94e2dbed7c4c69d9761d1d416cc",
+    "transactionHash": "0x0288f9a5aa04ef6c1b4937a4141c127378eea1898ba8377ee2e89cd931a0b406",
+    "logs": [],
+    "blockNumber": 9368195,
+    "cumulativeGasUsed": "4077564",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [
+    "0xE8cbD28a5cc96ca86513ad8847D344EE634D0A9D",
+    "StateCommitmentChain"
+  ],
+  "solcInputHash": "57c40cf5c155d19ac0bd1dac14b9b230",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_libAddressManager\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"_owner\",\"type\":\"string\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_index\",\"type\":\"uint256\"},{\"internalType\":\"bytes27\",\"name\":\"_globalMetadata\",\"type\":\"bytes27\"}],\"name\":\"deleteElementsAfterInclusive\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_index\",\"type\":\"uint256\"}],\"name\":\"deleteElementsAfterInclusive\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_index\",\"type\":\"uint256\"}],\"name\":\"get\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getGlobalMetadata\",\"outputs\":[{\"internalType\":\"bytes27\",\"name\":\"\",\"type\":\"bytes27\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"length\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"libAddressManager\",\"outputs\":[{\"internalType\":\"contract Lib_AddressManager\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_object\",\"type\":\"bytes32\"},{\"internalType\":\"bytes27\",\"name\":\"_globalMetadata\",\"type\":\"bytes27\"}],\"name\":\"push\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_object\",\"type\":\"bytes32\"}],\"name\":\"push\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_name\",\"type\":\"string\"}],\"name\":\"resolve\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes27\",\"name\":\"_globalMetadata\",\"type\":\"bytes27\"}],\"name\":\"setGlobalMetadata\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"The Chain Storage Container provides its owner contract with read, write and delete functionality. This provides gas efficiency gains by enabling it to overwrite storage slots which can no longer be used in a fraud proof due to the fraud window having passed, and the associated chain state or transactions being finalized. Three distinct Chain Storage Containers will be deployed on Layer 1: 1. Stores transaction batches for the Canonical Transaction Chain 2. Stores queued transactions for the Canonical Transaction Chain 3. Stores chain state batches for the State Commitment Chain Runtime target: EVM\",\"kind\":\"dev\",\"methods\":{\"constructor\":{\"params\":{\"_libAddressManager\":\"Address of the Address Manager.\",\"_owner\":\"Name of the contract that owns this container (will be resolved later).\"}},\"deleteElementsAfterInclusive(uint256)\":{\"params\":{\"_index\":\"Object index to delete from.\"}},\"deleteElementsAfterInclusive(uint256,bytes27)\":{\"params\":{\"_globalMetadata\":\"New global metadata for the container.\",\"_index\":\"Object index to delete from.\"}},\"get(uint256)\":{\"params\":{\"_index\":\"Index of the particular object to access.\"},\"returns\":{\"_0\":\"32 byte object value.\"}},\"getGlobalMetadata()\":{\"returns\":{\"_0\":\"Container global metadata field.\"}},\"length()\":{\"returns\":{\"_0\":\"Number of objects in the container.\"}},\"push(bytes32)\":{\"params\":{\"_object\":\"A 32 byte value to insert into the container.\"}},\"push(bytes32,bytes27)\":{\"params\":{\"_globalMetadata\":\"New global metadata for the container.\",\"_object\":\"A 32 byte value to insert into the container.\"}},\"resolve(string)\":{\"params\":{\"_name\":\"Name to resolve an address for.\"},\"returns\":{\"_0\":\"Address associated with the given name.\"}},\"setGlobalMetadata(bytes27)\":{\"params\":{\"_globalMetadata\":\"New global metadata to set.\"}}},\"title\":\"ChainStorageContainer\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"deleteElementsAfterInclusive(uint256)\":{\"notice\":\"Removes all objects after and including a given index.\"},\"deleteElementsAfterInclusive(uint256,bytes27)\":{\"notice\":\"Removes all objects after and including a given index. Also allows setting the global metadata field.\"},\"get(uint256)\":{\"notice\":\"Retrieves an object from the container.\"},\"getGlobalMetadata()\":{\"notice\":\"Retrieves the container's global metadata field.\"},\"length()\":{\"notice\":\"Retrieves the number of objects stored in the container.\"},\"push(bytes32)\":{\"notice\":\"Pushes an object into the container.\"},\"push(bytes32,bytes27)\":{\"notice\":\"Pushes an object into the container. Function allows setting the global metadata since we'll need to touch the \\\"length\\\" storage slot anyway, which also contains the global metadata (it's an optimization).\"},\"resolve(string)\":{\"notice\":\"Resolves the address associated with a given name.\"},\"setGlobalMetadata(bytes27)\":{\"notice\":\"Sets the container's global metadata field. We're using `bytes27` here because we use five bytes to maintain the length of the underlying data structure, meaning we have an extra 27 bytes to store arbitrary data.\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/L1/rollup/ChainStorageContainer.sol\":\"ChainStorageContainer\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/access/Ownable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"../utils/Context.sol\\\";\\n\\n/**\\n * @dev Contract module which provides a basic access control mechanism, where\\n * there is an account (an owner) that can be granted exclusive access to\\n * specific functions.\\n *\\n * By default, the owner account will be the one that deploys the contract. This\\n * can later be changed with {transferOwnership}.\\n *\\n * This module is used through inheritance. It will make available the modifier\\n * `onlyOwner`, which can be applied to your functions to restrict their use to\\n * the owner.\\n */\\nabstract contract Ownable is Context {\\n    address private _owner;\\n\\n    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);\\n\\n    /**\\n     * @dev Initializes the contract setting the deployer as the initial owner.\\n     */\\n    constructor() {\\n        _setOwner(_msgSender());\\n    }\\n\\n    /**\\n     * @dev Returns the address of the current owner.\\n     */\\n    function owner() public view virtual returns (address) {\\n        return _owner;\\n    }\\n\\n    /**\\n     * @dev Throws if called by any account other than the owner.\\n     */\\n    modifier onlyOwner() {\\n        require(owner() == _msgSender(), \\\"Ownable: caller is not the owner\\\");\\n        _;\\n    }\\n\\n    /**\\n     * @dev Leaves the contract without owner. It will not be possible to call\\n     * `onlyOwner` functions anymore. Can only be called by the current owner.\\n     *\\n     * NOTE: Renouncing ownership will leave the contract without an owner,\\n     * thereby removing any functionality that is only available to the owner.\\n     */\\n    function renounceOwnership() public virtual onlyOwner {\\n        _setOwner(address(0));\\n    }\\n\\n    /**\\n     * @dev Transfers ownership of the contract to a new account (`newOwner`).\\n     * Can only be called by the current owner.\\n     */\\n    function transferOwnership(address newOwner) public virtual onlyOwner {\\n        require(newOwner != address(0), \\\"Ownable: new owner is the zero address\\\");\\n        _setOwner(newOwner);\\n    }\\n\\n    function _setOwner(address newOwner) private {\\n        address oldOwner = _owner;\\n        _owner = newOwner;\\n        emit OwnershipTransferred(oldOwner, newOwner);\\n    }\\n}\\n\",\"keccak256\":\"0x6bb804a310218875e89d12c053e94a13a4607cdf7cc2052f3e52bd32a0dc50a1\",\"license\":\"MIT\"},\"@openzeppelin/contracts/utils/Context.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev Provides information about the current execution context, including the\\n * sender of the transaction and its data. While these are generally available\\n * via msg.sender and msg.data, they should not be accessed in such a direct\\n * manner, since when dealing with meta-transactions the account sending and\\n * paying for execution may not be the actual sender (as far as an application\\n * is concerned).\\n *\\n * This contract is only required for intermediate, library-like contracts.\\n */\\nabstract contract Context {\\n    function _msgSender() internal view virtual returns (address) {\\n        return msg.sender;\\n    }\\n\\n    function _msgData() internal view virtual returns (bytes calldata) {\\n        return msg.data;\\n    }\\n}\\n\",\"keccak256\":\"0x90565a39ae45c80f0468dc96c7b20d0afc3055f344c8203a0c9258239f350b9f\",\"license\":\"MIT\"},\"contracts/L1/rollup/ChainStorageContainer.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.7;\\n\\n/* Library Imports */\\nimport { Lib_Buffer } from \\\"../../libraries/utils/Lib_Buffer.sol\\\";\\nimport { Lib_AddressResolver } from \\\"../../libraries/resolver/Lib_AddressResolver.sol\\\";\\n\\n/* Interface Imports */\\nimport { IChainStorageContainer } from \\\"./IChainStorageContainer.sol\\\";\\n\\n/**\\n * @title ChainStorageContainer\\n * @dev The Chain Storage Container provides its owner contract with read, write and delete\\n * functionality. This provides gas efficiency gains by enabling it to overwrite storage slots which\\n * can no longer be used in a fraud proof due to the fraud window having passed, and the associated\\n * chain state or transactions being finalized.\\n * Three distinct Chain Storage Containers will be deployed on Layer 1:\\n * 1. Stores transaction batches for the Canonical Transaction Chain\\n * 2. Stores queued transactions for the Canonical Transaction Chain\\n * 3. Stores chain state batches for the State Commitment Chain\\n *\\n * Runtime target: EVM\\n */\\ncontract ChainStorageContainer is IChainStorageContainer, Lib_AddressResolver {\\n\\n    /*************\\n     * Libraries *\\n     *************/\\n\\n    using Lib_Buffer for Lib_Buffer.Buffer;\\n\\n\\n    /*************\\n     * Variables *\\n     *************/\\n\\n    string public owner;\\n    Lib_Buffer.Buffer internal buffer;\\n\\n\\n    /***************\\n     * Constructor *\\n     ***************/\\n\\n    /**\\n     * @param _libAddressManager Address of the Address Manager.\\n     * @param _owner Name of the contract that owns this container (will be resolved later).\\n     */\\n    constructor(\\n        address _libAddressManager,\\n        string memory _owner\\n    )\\n        Lib_AddressResolver(_libAddressManager)\\n    {\\n        owner = _owner;\\n    }\\n\\n\\n    /**********************\\n     * Function Modifiers *\\n     **********************/\\n\\n    modifier onlyOwner() {\\n        require(\\n            msg.sender == resolve(owner),\\n            \\\"ChainStorageContainer: Function can only be called by the owner.\\\"\\n        );\\n        _;\\n    }\\n\\n\\n    /********************\\n     * Public Functions *\\n     ********************/\\n\\n    /**\\n     * @inheritdoc IChainStorageContainer\\n     */\\n    function setGlobalMetadata(\\n        bytes27 _globalMetadata\\n    )\\n        override\\n        public\\n        onlyOwner\\n    {\\n        return buffer.setExtraData(_globalMetadata);\\n    }\\n\\n    /**\\n     * @inheritdoc IChainStorageContainer\\n     */\\n    function getGlobalMetadata()\\n        override\\n        public\\n        view\\n        returns (\\n            bytes27\\n        )\\n    {\\n        return buffer.getExtraData();\\n    }\\n\\n    /**\\n     * @inheritdoc IChainStorageContainer\\n     */\\n    function length()\\n        override\\n        public\\n        view\\n        returns (\\n            uint256\\n        )\\n    {\\n        return uint256(buffer.getLength());\\n    }\\n\\n    /**\\n     * @inheritdoc IChainStorageContainer\\n     */\\n    function push(\\n        bytes32 _object\\n    )\\n        override\\n        public\\n        onlyOwner\\n    {\\n        buffer.push(_object);\\n    }\\n\\n    /**\\n     * @inheritdoc IChainStorageContainer\\n     */\\n    function push(\\n        bytes32 _object,\\n        bytes27 _globalMetadata\\n    )\\n        override\\n        public\\n        onlyOwner\\n    {\\n        buffer.push(_object, _globalMetadata);\\n    }\\n\\n    /**\\n     * @inheritdoc IChainStorageContainer\\n     */\\n    function get(\\n        uint256 _index\\n    )\\n        override\\n        public\\n        view\\n        returns (\\n            bytes32\\n        )\\n    {\\n        return buffer.get(uint40(_index));\\n    }\\n\\n    /**\\n     * @inheritdoc IChainStorageContainer\\n     */\\n    function deleteElementsAfterInclusive(\\n        uint256 _index\\n    )\\n        override\\n        public\\n        onlyOwner\\n    {\\n        buffer.deleteElementsAfterInclusive(\\n            uint40(_index)\\n        );\\n    }\\n\\n    /**\\n     * @inheritdoc IChainStorageContainer\\n     */\\n    function deleteElementsAfterInclusive(\\n        uint256 _index,\\n        bytes27 _globalMetadata\\n    )\\n        override\\n        public\\n        onlyOwner\\n    {\\n        buffer.deleteElementsAfterInclusive(\\n            uint40(_index),\\n            _globalMetadata\\n        );\\n    }\\n}\\n\",\"keccak256\":\"0x4dfb25f965b9f3377d33e7ebcb279f6de6ab6fc76526b1d36a573c11950f2c47\",\"license\":\"MIT\"},\"contracts/L1/rollup/IChainStorageContainer.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity >0.5.0 <0.9.0;\\n\\n/**\\n * @title IChainStorageContainer\\n */\\ninterface IChainStorageContainer {\\n\\n    /********************\\n     * Public Functions *\\n     ********************/\\n\\n    /**\\n     * Sets the container's global metadata field. We're using `bytes27` here because we use five\\n     * bytes to maintain the length of the underlying data structure, meaning we have an extra\\n     * 27 bytes to store arbitrary data.\\n     * @param _globalMetadata New global metadata to set.\\n     */\\n    function setGlobalMetadata(\\n        bytes27 _globalMetadata\\n    )\\n        external;\\n\\n    /**\\n     * Retrieves the container's global metadata field.\\n     * @return Container global metadata field.\\n     */\\n    function getGlobalMetadata()\\n        external\\n        view\\n        returns (\\n            bytes27\\n        );\\n\\n    /**\\n     * Retrieves the number of objects stored in the container.\\n     * @return Number of objects in the container.\\n     */\\n    function length()\\n        external\\n        view\\n        returns (\\n            uint256\\n        );\\n\\n    /**\\n     * Pushes an object into the container.\\n     * @param _object A 32 byte value to insert into the container.\\n     */\\n    function push(\\n        bytes32 _object\\n    )\\n        external;\\n\\n    /**\\n     * Pushes an object into the container. Function allows setting the global metadata since\\n     * we'll need to touch the \\\"length\\\" storage slot anyway, which also contains the global\\n     * metadata (it's an optimization).\\n     * @param _object A 32 byte value to insert into the container.\\n     * @param _globalMetadata New global metadata for the container.\\n     */\\n    function push(\\n        bytes32 _object,\\n        bytes27 _globalMetadata\\n    )\\n        external;\\n\\n    /**\\n     * Retrieves an object from the container.\\n     * @param _index Index of the particular object to access.\\n     * @return 32 byte object value.\\n     */\\n    function get(\\n        uint256 _index\\n    )\\n        external\\n        view\\n        returns (\\n            bytes32\\n        );\\n\\n    /**\\n     * Removes all objects after and including a given index.\\n     * @param _index Object index to delete from.\\n     */\\n    function deleteElementsAfterInclusive(\\n        uint256 _index\\n    )\\n        external;\\n\\n    /**\\n     * Removes all objects after and including a given index. Also allows setting the global\\n     * metadata field.\\n     * @param _index Object index to delete from.\\n     * @param _globalMetadata New global metadata for the container.\\n     */\\n    function deleteElementsAfterInclusive(\\n        uint256 _index,\\n        bytes27 _globalMetadata\\n    )\\n        external;\\n}\\n\",\"keccak256\":\"0xf50d8b93a385b40ce4e3a42c97e5431ee148c1abcfd5d7dee48301c76a6aa207\",\"license\":\"MIT\"},\"contracts/libraries/resolver/Lib_AddressManager.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.7;\\n\\n/* External Imports */\\nimport { Ownable } from \\\"@openzeppelin/contracts/access/Ownable.sol\\\";\\n\\n/**\\n * @title Lib_AddressManager\\n */\\ncontract Lib_AddressManager is Ownable {\\n\\n    /**********\\n     * Events *\\n     **********/\\n\\n    event AddressSet(\\n        string indexed _name,\\n        address _newAddress,\\n        address _oldAddress\\n    );\\n\\n\\n    /*************\\n     * Variables *\\n     *************/\\n\\n    mapping (bytes32 => address) private addresses;\\n\\n\\n    /********************\\n     * Public Functions *\\n     ********************/\\n\\n    /**\\n     * Changes the address associated with a particular name.\\n     * @param _name String name to associate an address with.\\n     * @param _address Address to associate with the name.\\n     */\\n    function setAddress(\\n        string memory _name,\\n        address _address\\n    )\\n        external\\n        onlyOwner\\n    {\\n        bytes32 nameHash = _getNameHash(_name);\\n        address oldAddress = addresses[nameHash];\\n        addresses[nameHash] = _address;\\n\\n        emit AddressSet(\\n            _name,\\n            _address,\\n            oldAddress\\n        );\\n    }\\n\\n    /**\\n     * Retrieves the address associated with a given name.\\n     * @param _name Name to retrieve an address for.\\n     * @return Address associated with the given name.\\n     */\\n    function getAddress(\\n        string memory _name\\n    )\\n        external\\n        view\\n        returns (\\n            address\\n        )\\n    {\\n        return addresses[_getNameHash(_name)];\\n    }\\n\\n\\n    /**********************\\n     * Internal Functions *\\n     **********************/\\n\\n    /**\\n     * Computes the hash of a name.\\n     * @param _name Name to compute a hash for.\\n     * @return Hash of the given name.\\n     */\\n    function _getNameHash(\\n        string memory _name\\n    )\\n        internal\\n        pure\\n        returns (\\n            bytes32\\n        )\\n    {\\n        return keccak256(abi.encodePacked(_name));\\n    }\\n}\\n\",\"keccak256\":\"0x0faaea7d284026771ac72c6242886aab90f08caf4c96eade8214cacc6ba4dae3\",\"license\":\"MIT\"},\"contracts/libraries/resolver/Lib_AddressResolver.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.7;\\n\\n/* Library Imports */\\nimport { Lib_AddressManager } from \\\"./Lib_AddressManager.sol\\\";\\n\\n/**\\n * @title Lib_AddressResolver\\n */\\nabstract contract Lib_AddressResolver {\\n\\n    /*************\\n     * Variables *\\n     *************/\\n\\n    Lib_AddressManager public libAddressManager;\\n\\n\\n    /***************\\n     * Constructor *\\n     ***************/\\n\\n    /**\\n     * @param _libAddressManager Address of the Lib_AddressManager.\\n     */\\n    constructor(\\n        address _libAddressManager\\n    ) {\\n        libAddressManager = Lib_AddressManager(_libAddressManager);\\n    }\\n\\n\\n    /********************\\n     * Public Functions *\\n     ********************/\\n\\n    /**\\n     * Resolves the address associated with a given name.\\n     * @param _name Name to resolve an address for.\\n     * @return Address associated with the given name.\\n     */\\n    function resolve(\\n        string memory _name\\n    )\\n        public\\n        view\\n        returns (\\n            address\\n        )\\n    {\\n        return libAddressManager.getAddress(_name);\\n    }\\n}\\n\",\"keccak256\":\"0x83296f8bdb5c32afbff2eebc5b360eb81787e67365ece09df2ed902694626895\",\"license\":\"MIT\"},\"contracts/libraries/utils/Lib_Buffer.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.7;\\n\\n/**\\n * @title Lib_Buffer\\n * @dev This library implements a bytes32 storage array with some additional gas-optimized\\n * functionality. In particular, it encodes its length as a uint40, and tightly packs this with an\\n * overwritable \\\"extra data\\\" field so we can store more information with a single SSTORE.\\n */\\nlibrary Lib_Buffer {\\n\\n    /*************\\n     * Libraries *\\n     *************/\\n\\n    using Lib_Buffer for Buffer;\\n\\n\\n    /***********\\n     * Structs *\\n     ***********/\\n\\n    struct Buffer {\\n        bytes32 context;\\n        mapping (uint256 => bytes32) buf;\\n    }\\n\\n    struct BufferContext {\\n        // Stores the length of the array. Uint40 is way more elements than we'll ever reasonably\\n        // need in an array and we get an extra 27 bytes of extra data to play with.\\n        uint40 length;\\n\\n        // Arbitrary extra data that can be modified whenever the length is updated. Useful for\\n        // squeezing out some gas optimizations.\\n        bytes27 extraData;\\n    }\\n\\n\\n    /**********************\\n     * Internal Functions *\\n     **********************/\\n\\n    /**\\n     * Pushes a single element to the buffer.\\n     * @param _self Buffer to access.\\n     * @param _value Value to push to the buffer.\\n     * @param _extraData Global extra data.\\n     */\\n    function push(\\n        Buffer storage _self,\\n        bytes32 _value,\\n        bytes27 _extraData\\n    )\\n        internal\\n    {\\n        BufferContext memory ctx = _self.getContext();\\n\\n        _self.buf[ctx.length] = _value;\\n\\n        // Bump the global index and insert our extra data, then save the context.\\n        ctx.length++;\\n        ctx.extraData = _extraData;\\n        _self.setContext(ctx);\\n    }\\n\\n    /**\\n     * Pushes a single element to the buffer.\\n     * @param _self Buffer to access.\\n     * @param _value Value to push to the buffer.\\n     */\\n    function push(\\n        Buffer storage _self,\\n        bytes32 _value\\n    )\\n        internal\\n    {\\n        BufferContext memory ctx = _self.getContext();\\n\\n        _self.push(\\n            _value,\\n            ctx.extraData\\n        );\\n    }\\n\\n    /**\\n     * Retrieves an element from the buffer.\\n     * @param _self Buffer to access.\\n     * @param _index Element index to retrieve.\\n     * @return Value of the element at the given index.\\n     */\\n    function get(\\n        Buffer storage _self,\\n        uint256 _index\\n    )\\n        internal\\n        view\\n        returns (\\n            bytes32\\n        )\\n    {\\n        BufferContext memory ctx = _self.getContext();\\n\\n        require(\\n            _index < ctx.length,\\n            \\\"Index out of bounds.\\\"\\n        );\\n\\n        return _self.buf[_index];\\n    }\\n\\n    /**\\n     * Deletes all elements after (and including) a given index.\\n     * @param _self Buffer to access.\\n     * @param _index Index of the element to delete from (inclusive).\\n     * @param _extraData Optional global extra data.\\n     */\\n    function deleteElementsAfterInclusive(\\n        Buffer storage _self,\\n        uint40 _index,\\n        bytes27 _extraData\\n    )\\n        internal\\n    {\\n        BufferContext memory ctx = _self.getContext();\\n\\n        require(\\n            _index < ctx.length,\\n            \\\"Index out of bounds.\\\"\\n        );\\n\\n        // Set our length and extra data, save the context.\\n        ctx.length = _index;\\n        ctx.extraData = _extraData;\\n        _self.setContext(ctx);\\n    }\\n\\n    /**\\n     * Deletes all elements after (and including) a given index.\\n     * @param _self Buffer to access.\\n     * @param _index Index of the element to delete from (inclusive).\\n     */\\n    function deleteElementsAfterInclusive(\\n        Buffer storage _self,\\n        uint40 _index\\n    )\\n        internal\\n    {\\n        BufferContext memory ctx = _self.getContext();\\n        _self.deleteElementsAfterInclusive(\\n            _index,\\n            ctx.extraData\\n        );\\n    }\\n\\n    /**\\n     * Retrieves the current global index.\\n     * @param _self Buffer to access.\\n     * @return Current global index.\\n     */\\n    function getLength(\\n        Buffer storage _self\\n    )\\n        internal\\n        view\\n        returns (\\n            uint40\\n        )\\n    {\\n        BufferContext memory ctx = _self.getContext();\\n        return ctx.length;\\n    }\\n\\n    /**\\n     * Changes current global extra data.\\n     * @param _self Buffer to access.\\n     * @param _extraData New global extra data.\\n     */\\n    function setExtraData(\\n        Buffer storage _self,\\n        bytes27 _extraData\\n    )\\n        internal\\n    {\\n        BufferContext memory ctx = _self.getContext();\\n        ctx.extraData = _extraData;\\n        _self.setContext(ctx);\\n    }\\n\\n    /**\\n     * Retrieves the current global extra data.\\n     * @param _self Buffer to access.\\n     * @return Current global extra data.\\n     */\\n    function getExtraData(\\n        Buffer storage _self\\n    )\\n        internal\\n        view\\n        returns (\\n            bytes27\\n        )\\n    {\\n        BufferContext memory ctx = _self.getContext();\\n        return ctx.extraData;\\n    }\\n\\n    /**\\n     * Sets the current buffer context.\\n     * @param _self Buffer to access.\\n     * @param _ctx Current buffer context.\\n     */\\n    function setContext(\\n        Buffer storage _self,\\n        BufferContext memory _ctx\\n    )\\n        internal\\n    {\\n        bytes32 context;\\n        uint40 length = _ctx.length;\\n        bytes27 extraData = _ctx.extraData;\\n        assembly {\\n            context := length\\n            context := or(context, extraData)\\n        }\\n\\n        if (_self.context != context) {\\n            _self.context = context;\\n        }\\n    }\\n\\n    /**\\n     * Retrieves the current buffer context.\\n     * @param _self Buffer to access.\\n     * @return Current buffer context.\\n     */\\n    function getContext(\\n        Buffer storage _self\\n    )\\n        internal\\n        view\\n        returns (\\n            BufferContext memory\\n        )\\n    {\\n        bytes32 context = _self.context;\\n        uint40 length;\\n        bytes27 extraData;\\n        assembly {\\n            // solhint-disable-next-line max-line-length\\n            length    := and(context, 0x000000000000000000000000000000000000000000000000000000FFFFFFFFFF)\\n            // solhint-disable-next-line max-line-length\\n            extraData := and(context, 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000000000)\\n        }\\n\\n        return BufferContext({\\n            length: length,\\n            extraData: extraData\\n        });\\n    }\\n}\\n\",\"keccak256\":\"0x89785c37abe093cd90a5ab15a27f9963f6b312381a35ea078d5ef205e68df144\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x60806040523480156200001157600080fd5b5060405162001865380380620018658339818101604052810190620000379190620001df565b81806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550508060019080519060200190620000919291906200009a565b50505062000417565b828054620000a8906200030e565b90600052602060002090601f016020900481019282620000cc576000855562000118565b82601f10620000e757805160ff191683800117855562000118565b8280016001018555821562000118579182015b8281111562000117578251825591602001919060010190620000fa565b5b5090506200012791906200012b565b5090565b5b80821115620001465760008160009055506001016200012c565b5090565b6000620001616200015b846200026e565b62000245565b90508281526020810184848401111562000180576200017f620003dd565b5b6200018d848285620002d8565b509392505050565b600081519050620001a681620003fd565b92915050565b600082601f830112620001c457620001c3620003d8565b5b8151620001d68482602086016200014a565b91505092915050565b60008060408385031215620001f957620001f8620003e7565b5b6000620002098582860162000195565b925050602083015167ffffffffffffffff8111156200022d576200022c620003e2565b5b6200023b85828601620001ac565b9150509250929050565b60006200025162000264565b90506200025f828262000344565b919050565b6000604051905090565b600067ffffffffffffffff8211156200028c576200028b620003a9565b5b6200029782620003ec565b9050602081019050919050565b6000620002b182620002b8565b9050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b60005b83811015620002f8578082015181840152602081019050620002db565b8381111562000308576000848401525b50505050565b600060028204905060018216806200032757607f821691505b602082108114156200033e576200033d6200037a565b5b50919050565b6200034f82620003ec565b810181811067ffffffffffffffff82111715620003715762000370620003a9565b5b80604052505050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052602260045260246000fd5b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b600080fd5b600080fd5b600080fd5b600080fd5b6000601f19601f8301169050919050565b6200040881620002a4565b81146200041457600080fd5b50565b61143e80620004276000396000f3fe608060405234801561001057600080fd5b50600436106100a95760003560e01c8063461a447811610071578063461a44781461013e5780634651d91e1461016e5780638da5cb5b1461018a5780639507d39a146101a8578063b298e36b146101d8578063ccf8f969146101f4576100a9565b8063167fd681146100ae5780631f7b6d32146100ca5780632015276c146100e857806329061de214610104578063299ca47814610120575b600080fd5b6100c860048036038101906100c39190610e91565b610212565b005b6100d261032c565b6040516100df9190611069565b60405180910390f35b61010260048036038101906100fd9190610ddb565b610344565b005b61011e60048036038101906101199190610d81565b61045e565b005b610128610575565b6040516101359190610fec565b60405180910390f35b61015860048036038101906101539190610e1b565b610599565b6040516101659190610f9b565b60405180910390f35b61018860048036038101906101839190610e64565b61064c565b005b610192610763565b60405161019f9190611007565b60405180910390f35b6101c260048036038101906101bd9190610e64565b6107f1565b6040516101cf9190610fd1565b60405180910390f35b6101f260048036038101906101ed9190610dae565b610815565b005b6101fc61092c565b6040516102099190610fb6565b60405180910390f35b6102a560018054610222906111f1565b80601f016020809104026020016040519081016040528092919081815260200182805461024e906111f1565b801561029b5780601f106102705761010080835404028352916020019161029b565b820191906000526020600020905b81548152906001019060200180831161027e57829003601f168201915b5050505050610599565b73ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614610312576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040161030990611029565b60405180910390fd5b6103288282600261093d9092919063ffffffff16565b5050565b600061033860026109ed565b64ffffffffff16905090565b6103d760018054610354906111f1565b80601f0160208091040260200160405190810160405280929190818152602001828054610380906111f1565b80156103cd5780601f106103a2576101008083540402835291602001916103cd565b820191906000526020600020905b8154815290600101906020018083116103b057829003601f168201915b5050505050610599565b73ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614610444576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040161043b90611029565b60405180910390fd5b61045a82826002610a089092919063ffffffff16565b5050565b6104f16001805461046e906111f1565b80601f016020809104026020016040519081016040528092919081815260200182805461049a906111f1565b80156104e75780601f106104bc576101008083540402835291602001916104e7565b820191906000526020600020905b8154815290600101906020018083116104ca57829003601f168201915b5050505050610599565b73ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161461055e576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040161055590611029565b60405180910390fd5b610572816002610a9390919063ffffffff16565b50565b60008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663bf40fac1836040518263ffffffff1660e01b81526004016105f59190611007565b60206040518083038186803b15801561060d57600080fd5b505afa158015610621573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906106459190610d54565b9050919050565b6106df6001805461065c906111f1565b80601f0160208091040260200160405190810160405280929190818152602001828054610688906111f1565b80156106d55780601f106106aa576101008083540402835291602001916106d5565b820191906000526020600020905b8154815290600101906020018083116106b857829003601f168201915b5050505050610599565b73ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161461074c576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040161074390611029565b60405180910390fd5b610760816002610ad490919063ffffffff16565b50565b60018054610770906111f1565b80601f016020809104026020016040519081016040528092919081815260200182805461079c906111f1565b80156107e95780601f106107be576101008083540402835291602001916107e9565b820191906000526020600020905b8154815290600101906020018083116107cc57829003601f168201915b505050505081565b600061080e8264ffffffffff166002610aff90919063ffffffff16565b9050919050565b6108a860018054610825906111f1565b80601f0160208091040260200160405190810160405280929190818152602001828054610851906111f1565b801561089e5780601f106108735761010080835404028352916020019161089e565b820191906000526020600020905b81548152906001019060200180831161088157829003601f168201915b5050505050610599565b73ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614610915576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040161090c90611029565b60405180910390fd5b610929816002610b7990919063ffffffff16565b50565b60006109386002610ba4565b905090565b600061094884610bbf565b9050806000015164ffffffffff168364ffffffffff161061099e576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040161099590611049565b60405180910390fd5b82816000019064ffffffffff16908164ffffffffff168152505081816020019064ffffffffff1916908164ffffffffff1916815250506109e78185610c3090919063ffffffff16565b50505050565b6000806109f983610bbf565b90508060000151915050919050565b6000610a1384610bbf565b905082846001016000836000015164ffffffffff16815260200190815260200160002081905550806000018051809190610a4c90611254565b64ffffffffff1664ffffffffff168152505081816020019064ffffffffff1916908164ffffffffff191681525050610a8d8185610c3090919063ffffffff16565b50505050565b6000610a9e83610bbf565b905081816020019064ffffffffff1916908164ffffffffff191681525050610acf8184610c3090919063ffffffff16565b505050565b6000610adf83610bbf565b9050610afa8282602001518561093d9092919063ffffffff16565b505050565b600080610b0b84610bbf565b9050806000015164ffffffffff168310610b5a576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401610b5190611049565b60405180910390fd5b8360010160008481526020019081526020016000205491505092915050565b6000610b8483610bbf565b9050610b9f82826020015185610a089092919063ffffffff16565b505050565b600080610bb083610bbf565b90508060200151915050919050565b610bc7610c67565b60008260000154905060008064ffffffffff831691507fffffffffffffffffffffffffffffffffffffffffffffffffffffff00000000008316905060405180604001604052808364ffffffffff1681526020018264ffffffffff19168152509350505050919050565b60008082600001519050600083602001519050819250808317925082856000015414610c60578285600001819055505b5050505050565b6040518060400160405280600064ffffffffff168152602001600064ffffffffff191681525090565b6000610ca3610c9e846110a9565b611084565b905082815260208101848484011115610cbf57610cbe611314565b5b610cca8482856111af565b509392505050565b600081519050610ce1816113ac565b92915050565b600081359050610cf6816113c3565b92915050565b600081359050610d0b816113da565b92915050565b600082601f830112610d2657610d2561130f565b5b8135610d36848260208601610c90565b91505092915050565b600081359050610d4e816113f1565b92915050565b600060208284031215610d6a57610d6961131e565b5b6000610d7884828501610cd2565b91505092915050565b600060208284031215610d9757610d9661131e565b5b6000610da584828501610ce7565b91505092915050565b600060208284031215610dc457610dc361131e565b5b6000610dd284828501610cfc565b91505092915050565b60008060408385031215610df257610df161131e565b5b6000610e0085828601610cfc565b9250506020610e1185828601610ce7565b9150509250929050565b600060208284031215610e3157610e3061131e565b5b600082013567ffffffffffffffff811115610e4f57610e4e611319565b5b610e5b84828501610d11565b91505092915050565b600060208284031215610e7a57610e7961131e565b5b6000610e8884828501610d3f565b91505092915050565b60008060408385031215610ea857610ea761131e565b5b6000610eb685828601610d3f565b9250506020610ec785828601610ce7565b9150509250929050565b610eda816110f6565b82525050565b610ee981611108565b82525050565b610ef881611134565b82525050565b610f0781611179565b82525050565b6000610f18826110da565b610f2281856110e5565b9350610f328185602086016111be565b610f3b81611323565b840191505092915050565b6000610f536040836110e5565b9150610f5e82611334565b604082019050919050565b6000610f766014836110e5565b9150610f8182611383565b602082019050919050565b610f958161115e565b82525050565b6000602082019050610fb06000830184610ed1565b92915050565b6000602082019050610fcb6000830184610ee0565b92915050565b6000602082019050610fe66000830184610eef565b92915050565b60006020820190506110016000830184610efe565b92915050565b600060208201905081810360008301526110218184610f0d565b905092915050565b6000602082019050818103600083015261104281610f46565b9050919050565b6000602082019050818103600083015261106281610f69565b9050919050565b600060208201905061107e6000830184610f8c565b92915050565b600061108e61109f565b905061109a8282611223565b919050565b6000604051905090565b600067ffffffffffffffff8211156110c4576110c36112e0565b5b6110cd82611323565b9050602081019050919050565b600081519050919050565b600082825260208201905092915050565b60006111018261113e565b9050919050565b60007fffffffffffffffffffffffffffffffffffffffffffffffffffffff000000000082169050919050565b6000819050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000819050919050565b600064ffffffffff82169050919050565b60006111848261118b565b9050919050565b60006111968261119d565b9050919050565b60006111a88261113e565b9050919050565b82818337600083830152505050565b60005b838110156111dc5780820151818401526020810190506111c1565b838111156111eb576000848401525b50505050565b6000600282049050600182168061120957607f821691505b6020821081141561121d5761121c6112b1565b5b50919050565b61122c82611323565b810181811067ffffffffffffffff8211171561124b5761124a6112e0565b5b80604052505050565b600061125f82611168565b915064ffffffffff82141561127757611276611282565b5b600182019050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b7f4e487b7100000000000000000000000000000000000000000000000000000000600052602260045260246000fd5b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b600080fd5b600080fd5b600080fd5b600080fd5b6000601f19601f8301169050919050565b7f436861696e53746f72616765436f6e7461696e65723a2046756e6374696f6e2060008201527f63616e206f6e6c792062652063616c6c656420627920746865206f776e65722e602082015250565b7f496e646578206f7574206f6620626f756e64732e000000000000000000000000600082015250565b6113b5816110f6565b81146113c057600080fd5b50565b6113cc81611108565b81146113d757600080fd5b50565b6113e381611134565b81146113ee57600080fd5b50565b6113fa8161115e565b811461140557600080fd5b5056fea26469706673582212202bdebcbb8e8a87e95c6eaaaf73c165b22c94783d468d6222d05af21e8676611164736f6c63430008070033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100a95760003560e01c8063461a447811610071578063461a44781461013e5780634651d91e1461016e5780638da5cb5b1461018a5780639507d39a146101a8578063b298e36b146101d8578063ccf8f969146101f4576100a9565b8063167fd681146100ae5780631f7b6d32146100ca5780632015276c146100e857806329061de214610104578063299ca47814610120575b600080fd5b6100c860048036038101906100c39190610e91565b610212565b005b6100d261032c565b6040516100df9190611069565b60405180910390f35b61010260048036038101906100fd9190610ddb565b610344565b005b61011e60048036038101906101199190610d81565b61045e565b005b610128610575565b6040516101359190610fec565b60405180910390f35b61015860048036038101906101539190610e1b565b610599565b6040516101659190610f9b565b60405180910390f35b61018860048036038101906101839190610e64565b61064c565b005b610192610763565b60405161019f9190611007565b60405180910390f35b6101c260048036038101906101bd9190610e64565b6107f1565b6040516101cf9190610fd1565b60405180910390f35b6101f260048036038101906101ed9190610dae565b610815565b005b6101fc61092c565b6040516102099190610fb6565b60405180910390f35b6102a560018054610222906111f1565b80601f016020809104026020016040519081016040528092919081815260200182805461024e906111f1565b801561029b5780601f106102705761010080835404028352916020019161029b565b820191906000526020600020905b81548152906001019060200180831161027e57829003601f168201915b5050505050610599565b73ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614610312576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040161030990611029565b60405180910390fd5b6103288282600261093d9092919063ffffffff16565b5050565b600061033860026109ed565b64ffffffffff16905090565b6103d760018054610354906111f1565b80601f0160208091040260200160405190810160405280929190818152602001828054610380906111f1565b80156103cd5780601f106103a2576101008083540402835291602001916103cd565b820191906000526020600020905b8154815290600101906020018083116103b057829003601f168201915b5050505050610599565b73ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614610444576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040161043b90611029565b60405180910390fd5b61045a82826002610a089092919063ffffffff16565b5050565b6104f16001805461046e906111f1565b80601f016020809104026020016040519081016040528092919081815260200182805461049a906111f1565b80156104e75780601f106104bc576101008083540402835291602001916104e7565b820191906000526020600020905b8154815290600101906020018083116104ca57829003601f168201915b5050505050610599565b73ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161461055e576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040161055590611029565b60405180910390fd5b610572816002610a9390919063ffffffff16565b50565b60008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663bf40fac1836040518263ffffffff1660e01b81526004016105f59190611007565b60206040518083038186803b15801561060d57600080fd5b505afa158015610621573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906106459190610d54565b9050919050565b6106df6001805461065c906111f1565b80601f0160208091040260200160405190810160405280929190818152602001828054610688906111f1565b80156106d55780601f106106aa576101008083540402835291602001916106d5565b820191906000526020600020905b8154815290600101906020018083116106b857829003601f168201915b5050505050610599565b73ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161461074c576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040161074390611029565b60405180910390fd5b610760816002610ad490919063ffffffff16565b50565b60018054610770906111f1565b80601f016020809104026020016040519081016040528092919081815260200182805461079c906111f1565b80156107e95780601f106107be576101008083540402835291602001916107e9565b820191906000526020600020905b8154815290600101906020018083116107cc57829003601f168201915b505050505081565b600061080e8264ffffffffff166002610aff90919063ffffffff16565b9050919050565b6108a860018054610825906111f1565b80601f0160208091040260200160405190810160405280929190818152602001828054610851906111f1565b801561089e5780601f106108735761010080835404028352916020019161089e565b820191906000526020600020905b81548152906001019060200180831161088157829003601f168201915b5050505050610599565b73ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614610915576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040161090c90611029565b60405180910390fd5b610929816002610b7990919063ffffffff16565b50565b60006109386002610ba4565b905090565b600061094884610bbf565b9050806000015164ffffffffff168364ffffffffff161061099e576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040161099590611049565b60405180910390fd5b82816000019064ffffffffff16908164ffffffffff168152505081816020019064ffffffffff1916908164ffffffffff1916815250506109e78185610c3090919063ffffffff16565b50505050565b6000806109f983610bbf565b90508060000151915050919050565b6000610a1384610bbf565b905082846001016000836000015164ffffffffff16815260200190815260200160002081905550806000018051809190610a4c90611254565b64ffffffffff1664ffffffffff168152505081816020019064ffffffffff1916908164ffffffffff191681525050610a8d8185610c3090919063ffffffff16565b50505050565b6000610a9e83610bbf565b905081816020019064ffffffffff1916908164ffffffffff191681525050610acf8184610c3090919063ffffffff16565b505050565b6000610adf83610bbf565b9050610afa8282602001518561093d9092919063ffffffff16565b505050565b600080610b0b84610bbf565b9050806000015164ffffffffff168310610b5a576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401610b5190611049565b60405180910390fd5b8360010160008481526020019081526020016000205491505092915050565b6000610b8483610bbf565b9050610b9f82826020015185610a089092919063ffffffff16565b505050565b600080610bb083610bbf565b90508060200151915050919050565b610bc7610c67565b60008260000154905060008064ffffffffff831691507fffffffffffffffffffffffffffffffffffffffffffffffffffffff00000000008316905060405180604001604052808364ffffffffff1681526020018264ffffffffff19168152509350505050919050565b60008082600001519050600083602001519050819250808317925082856000015414610c60578285600001819055505b5050505050565b6040518060400160405280600064ffffffffff168152602001600064ffffffffff191681525090565b6000610ca3610c9e846110a9565b611084565b905082815260208101848484011115610cbf57610cbe611314565b5b610cca8482856111af565b509392505050565b600081519050610ce1816113ac565b92915050565b600081359050610cf6816113c3565b92915050565b600081359050610d0b816113da565b92915050565b600082601f830112610d2657610d2561130f565b5b8135610d36848260208601610c90565b91505092915050565b600081359050610d4e816113f1565b92915050565b600060208284031215610d6a57610d6961131e565b5b6000610d7884828501610cd2565b91505092915050565b600060208284031215610d9757610d9661131e565b5b6000610da584828501610ce7565b91505092915050565b600060208284031215610dc457610dc361131e565b5b6000610dd284828501610cfc565b91505092915050565b60008060408385031215610df257610df161131e565b5b6000610e0085828601610cfc565b9250506020610e1185828601610ce7565b9150509250929050565b600060208284031215610e3157610e3061131e565b5b600082013567ffffffffffffffff811115610e4f57610e4e611319565b5b610e5b84828501610d11565b91505092915050565b600060208284031215610e7a57610e7961131e565b5b6000610e8884828501610d3f565b91505092915050565b60008060408385031215610ea857610ea761131e565b5b6000610eb685828601610d3f565b9250506020610ec785828601610ce7565b9150509250929050565b610eda816110f6565b82525050565b610ee981611108565b82525050565b610ef881611134565b82525050565b610f0781611179565b82525050565b6000610f18826110da565b610f2281856110e5565b9350610f328185602086016111be565b610f3b81611323565b840191505092915050565b6000610f536040836110e5565b9150610f5e82611334565b604082019050919050565b6000610f766014836110e5565b9150610f8182611383565b602082019050919050565b610f958161115e565b82525050565b6000602082019050610fb06000830184610ed1565b92915050565b6000602082019050610fcb6000830184610ee0565b92915050565b6000602082019050610fe66000830184610eef565b92915050565b60006020820190506110016000830184610efe565b92915050565b600060208201905081810360008301526110218184610f0d565b905092915050565b6000602082019050818103600083015261104281610f46565b9050919050565b6000602082019050818103600083015261106281610f69565b9050919050565b600060208201905061107e6000830184610f8c565b92915050565b600061108e61109f565b905061109a8282611223565b919050565b6000604051905090565b600067ffffffffffffffff8211156110c4576110c36112e0565b5b6110cd82611323565b9050602081019050919050565b600081519050919050565b600082825260208201905092915050565b60006111018261113e565b9050919050565b60007fffffffffffffffffffffffffffffffffffffffffffffffffffffff000000000082169050919050565b6000819050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000819050919050565b600064ffffffffff82169050919050565b60006111848261118b565b9050919050565b60006111968261119d565b9050919050565b60006111a88261113e565b9050919050565b82818337600083830152505050565b60005b838110156111dc5780820151818401526020810190506111c1565b838111156111eb576000848401525b50505050565b6000600282049050600182168061120957607f821691505b6020821081141561121d5761121c6112b1565b5b50919050565b61122c82611323565b810181811067ffffffffffffffff8211171561124b5761124a6112e0565b5b80604052505050565b600061125f82611168565b915064ffffffffff82141561127757611276611282565b5b600182019050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b7f4e487b7100000000000000000000000000000000000000000000000000000000600052602260045260246000fd5b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b600080fd5b600080fd5b600080fd5b600080fd5b6000601f19601f8301169050919050565b7f436861696e53746f72616765436f6e7461696e65723a2046756e6374696f6e2060008201527f63616e206f6e6c792062652063616c6c656420627920746865206f776e65722e602082015250565b7f496e646578206f7574206f6620626f756e64732e000000000000000000000000600082015250565b6113b5816110f6565b81146113c057600080fd5b50565b6113cc81611108565b81146113d757600080fd5b50565b6113e381611134565b81146113ee57600080fd5b50565b6113fa8161115e565b811461140557600080fd5b5056fea26469706673582212202bdebcbb8e8a87e95c6eaaaf73c165b22c94783d468d6222d05af21e8676611164736f6c63430008070033",
+  "devdoc": {
+    "details": "The Chain Storage Container provides its owner contract with read, write and delete functionality. This provides gas efficiency gains by enabling it to overwrite storage slots which can no longer be used in a fraud proof due to the fraud window having passed, and the associated chain state or transactions being finalized. Three distinct Chain Storage Containers will be deployed on Layer 1: 1. Stores transaction batches for the Canonical Transaction Chain 2. Stores queued transactions for the Canonical Transaction Chain 3. Stores chain state batches for the State Commitment Chain Runtime target: EVM",
+    "kind": "dev",
+    "methods": {
+      "constructor": {
+        "params": {
+          "_libAddressManager": "Address of the Address Manager.",
+          "_owner": "Name of the contract that owns this container (will be resolved later)."
+        }
+      },
+      "deleteElementsAfterInclusive(uint256)": {
+        "params": {
+          "_index": "Object index to delete from."
+        }
+      },
+      "deleteElementsAfterInclusive(uint256,bytes27)": {
+        "params": {
+          "_globalMetadata": "New global metadata for the container.",
+          "_index": "Object index to delete from."
+        }
+      },
+      "get(uint256)": {
+        "params": {
+          "_index": "Index of the particular object to access."
+        },
+        "returns": {
+          "_0": "32 byte object value."
+        }
+      },
+      "getGlobalMetadata()": {
+        "returns": {
+          "_0": "Container global metadata field."
+        }
+      },
+      "length()": {
+        "returns": {
+          "_0": "Number of objects in the container."
+        }
+      },
+      "push(bytes32)": {
+        "params": {
+          "_object": "A 32 byte value to insert into the container."
+        }
+      },
+      "push(bytes32,bytes27)": {
+        "params": {
+          "_globalMetadata": "New global metadata for the container.",
+          "_object": "A 32 byte value to insert into the container."
+        }
+      },
+      "resolve(string)": {
+        "params": {
+          "_name": "Name to resolve an address for."
+        },
+        "returns": {
+          "_0": "Address associated with the given name."
+        }
+      },
+      "setGlobalMetadata(bytes27)": {
+        "params": {
+          "_globalMetadata": "New global metadata to set."
+        }
+      }
+    },
+    "title": "ChainStorageContainer",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "deleteElementsAfterInclusive(uint256)": {
+        "notice": "Removes all objects after and including a given index."
+      },
+      "deleteElementsAfterInclusive(uint256,bytes27)": {
+        "notice": "Removes all objects after and including a given index. Also allows setting the global metadata field."
+      },
+      "get(uint256)": {
+        "notice": "Retrieves an object from the container."
+      },
+      "getGlobalMetadata()": {
+        "notice": "Retrieves the container's global metadata field."
+      },
+      "length()": {
+        "notice": "Retrieves the number of objects stored in the container."
+      },
+      "push(bytes32)": {
+        "notice": "Pushes an object into the container."
+      },
+      "push(bytes32,bytes27)": {
+        "notice": "Pushes an object into the container. Function allows setting the global metadata since we'll need to touch the \"length\" storage slot anyway, which also contains the global metadata (it's an optimization)."
+      },
+      "resolve(string)": {
+        "notice": "Resolves the address associated with a given name."
+      },
+      "setGlobalMetadata(bytes27)": {
+        "notice": "Sets the container's global metadata field. We're using `bytes27` here because we use five bytes to maintain the length of the underlying data structure, meaning we have an extra 27 bytes to store arbitrary data."
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 7832,
+        "contract": "contracts/L1/rollup/ChainStorageContainer.sol:ChainStorageContainer",
+        "label": "libAddressManager",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_contract(Lib_AddressManager)7824"
+      },
+      {
+        "astId": 4630,
+        "contract": "contracts/L1/rollup/ChainStorageContainer.sol:ChainStorageContainer",
+        "label": "owner",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_string_storage"
+      },
+      {
+        "astId": 4633,
+        "contract": "contracts/L1/rollup/ChainStorageContainer.sol:ChainStorageContainer",
+        "label": "buffer",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_struct(Buffer)11585_storage"
+      }
+    ],
+    "types": {
+      "t_bytes32": {
+        "encoding": "inplace",
+        "label": "bytes32",
+        "numberOfBytes": "32"
+      },
+      "t_contract(Lib_AddressManager)7824": {
+        "encoding": "inplace",
+        "label": "contract Lib_AddressManager",
+        "numberOfBytes": "20"
+      },
+      "t_mapping(t_uint256,t_bytes32)": {
+        "encoding": "mapping",
+        "key": "t_uint256",
+        "label": "mapping(uint256 => bytes32)",
+        "numberOfBytes": "32",
+        "value": "t_bytes32"
+      },
+      "t_string_storage": {
+        "encoding": "bytes",
+        "label": "string",
+        "numberOfBytes": "32"
+      },
+      "t_struct(Buffer)11585_storage": {
+        "encoding": "inplace",
+        "label": "struct Lib_Buffer.Buffer",
+        "members": [
+          {
+            "astId": 11580,
+            "contract": "contracts/L1/rollup/ChainStorageContainer.sol:ChainStorageContainer",
+            "label": "context",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_bytes32"
+          },
+          {
+            "astId": 11584,
+            "contract": "contracts/L1/rollup/ChainStorageContainer.sol:ChainStorageContainer",
+            "label": "buf",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_uint256,t_bytes32)"
+          }
+        ],
+        "numberOfBytes": "64"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}
